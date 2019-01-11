@@ -1,108 +1,73 @@
-.square{
-  height: 200px;
-  width: 200px;
-}
 
-.flex-container {
+
+
+.square > div {
   display: flex;
-  width: 100%;
-}
-.flex-container > div {
   width: 200px;
   height: 200px;
   margin: 12px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-#Rectangle-1 {
-  width: 200px;
-  height: 200px;
+  }
+.square{
+  display: flex;
+  margin: 12px;
+  }
+.square--Rectangle-1 {
   background-color: #373a3c;
   margin: 42px;
 }
-#Rectangle-2 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-2 {
   background-color: #55595c;
   margin: 42px;
 }
-#Rectangle-3 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-3 {
   background-color: #777777;
-margin: 42px;
+  margin: 42px;
 }
-#Rectangle-4 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-4 {
   background-color: #818a91;
 margin: 42px;
 }
-#Rectangle-5 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-5 {
   background-color: #dddddd;
 margin: 42px;
 }
-#Rectangle-6 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-6 {
   background-color: #dddddd;
 margin: 42px;
 }
-#Rectangle-7 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-7 {
   background-color: #1c7cd5;
 margin: 42px;
 }
-#Rectangle-8 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-8 {
   background-color: #5cb85c;
 margin: 42px;
 }
-#Rectangle-9 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-9 {
   background-color: #56c0e0;
 margin: 42px;
 }
-#Rectangle-10 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-10 {
   background-color: #f0ad4e;
 margin: 42px;
 }
-#Rectangle-11 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-11 {
   background-color: #d9534f;
 margin: 42px;
 }
-#Rectangle-12 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-12 {
   background-color: #dcedf6;
 margin: 42px;
 }
-#Rectangle-13 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-13 {
   background-color: #e2eed8;
 margin: 42px;
 }
-#Rectangle-14 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-14 {
   background-color: #fcf7e4;
 margin: 42px;
 }
-#Rectangle-15 {
-  width: 200px;
-  height: 200px;
+.square--Rectangle-15 {
   background-color: #efdfdf;
 margin: 42px;
 }
