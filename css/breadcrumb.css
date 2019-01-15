@@ -7,12 +7,13 @@ ul.breadcrumb {
   border-radius: 3px;
   background-color: #dddddd;
   text-align: left;
+  font-size: 16px;;
 }
 ul.breadcrumb li {
+  
   display: inline;
   font-size: 18px;
   color: #777777;
-  padd
 }
 ul.breadcrumb li+li:before {
   padding: 8px;
