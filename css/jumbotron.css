@@ -50,3 +50,108 @@
 .btn-primary{
   margin-top: 21px;
 }
+html{
+  font-style: OpenSans;
+}
+body{
+  background-color: #fafafa;
+}
+.sidenav { 
+  width: 250px;
+  height: 873px;
+  box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--white);
+  height: 100%;
+  box-shadow: -5px 0 25px 0 ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 20px;
+}
+.sidenav__title{
+  width: 76px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+  margin-top: 19px;
+  margin-bottom: 2px;
+}
+.sidenav__name{
+  width: 88px;
+  height: 15px;
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9a9a9a;
+}
+.sidenav__component{
+  width: 86px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+  margin-top: 33px;
+  margin-bottom: 26px;
+}
+.sidenav a {
+  width: 71px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c5c5c;
+  margin-bottom: 22px;
+}
+
+.sidenav a:hover {
+  width: 33px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7ccc;
+  background-color: #fafafa;
+}
+.container{
+  padding-top: 53px;
+  padding-left: 68px;
+  margin-top: 39px;
+  margin-bottom: 44px;
+  margin-left: 290px;
+  margin-right: 40px;
+  width: 1036px;
+  height: 790px;
+  border-radius: 4px;
+  background-color: var(--white);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+}

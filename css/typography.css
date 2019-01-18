@@ -67,15 +67,34 @@
 }
 .fancydisplay{
 	display: flex;
+	margin-bottom: 50px;
 }
 .fancydisplay--h4{
 	color:#818a91;
 }
 .normal{
-	color: #373a3c;
+  width: 663px;
+  height: 64px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
 }
 .lead{
-	color: #373a3c;
+  width: 663px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
 }
 .ul--circle{
 	margin-left: 32px;
@@ -129,9 +148,11 @@
   line-height: 1.2;
 }
 .blockquote{
+	font-family: OpenSans;
 	padding-left: 10px;
 }
 .blockquote--line__left {
+	font-family: OpenSans;
   border-left: 6px solid silver;
   height: 112px;
 margin-left: 745px;
@@ -142,11 +163,12 @@ margin-left: 745px;
   margin-left: 765px;
   margin-top: -84px;
   margin-right: 154px;
+  font-family: OpenSans;
 }
 .blockquote--someone__left{
 	margin-left: 801px;
   margin-top: 12px;
- 
+ font-family: OpenSans;
   color: #818a91;
 }
 .blockquote--hr__left{
@@ -169,12 +191,12 @@ margin-left: 1261px;
 margin-top: -84px;
 margin-right: 232px;
 width: 527px;
-
+font-family: OpenSans;
 text-align: right;
 }
 .blockquote--someone__right{
   margin-left: 688px;
-
+font-family: OpenSans;
 margin-right: 232px;
 width: 527px;
 
@@ -189,5 +211,104 @@ margin-top: -10px;
 margin-right: 232px;
 }
 body,h1,h2,h3,h4,h5,h6,a {
-    font-family: 'Open Sans';
+    font-family: Open Sans;
+    background-color: #fafafa;
+}
+.sidenav { 
+  width: 250px;
+  height: 873px;
+  box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--white);
+  height: 100%;
+  box-shadow: -5px 0 25px 0 ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-left: 20px;
+}
+.sidenav__title{
+  width: 76px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+  margin-top: 19px;
+  margin-bottom: 2px;
+}
+.sidenav__name{
+  width: 88px;
+  height: 15px;
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9a9a9a;
+}
+.sidenav__component{
+  width: 86px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+  margin-top: 33px;
+  margin-bottom: 26px;
+}
+.sidenav a {
+  width: 71px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c5c5c;
+  margin-bottom: 22px;
+}
+
+.sidenav a:hover {
+  width: 33px;
+  height: 18px;
+  font-family: OpenSans;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3f7ccc;
+  background-color: #fafafa;
+}
+.container{
+  margin-top: 39px;
+  margin-bottom: 44px;
+  margin-left: 290px;
+  margin-right: 40px;
+  width: 1323px;
+  height: 1000px;
+  border-radius: 4px;
+  background-color: var(--white);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  max-width: 2000px !important;
 }
