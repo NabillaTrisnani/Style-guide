@@ -1,13 +1,14 @@
 .alert{
-  margin-left: 51px;
-  margin-bottom: 20px;
-  padding: 12px;
   width: 573px;
   height: 161px;
   border-radius: 4px;
   font-family: HelveticaNeue;
+  margin-bottom: 10px;
+  margin-left: 49px;
+  padding: 6px 10px 12px 20px;
 }
 .alert--1 {
+  margin-top: 28px;
   background-color: #cce5ff;
   color: #004085;
 }
@@ -36,6 +37,7 @@
   color: #818182;
 }
 .alert--8 {
+  margin-bottom: 55px;
   background-color: #d6d8d9;
     color: #1b1e21;
 }

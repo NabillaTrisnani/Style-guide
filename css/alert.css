@@ -1,27 +1,35 @@
 .alert{
-  margin-bottom: 20px;
-  padding: 12px;
+  padding-top: 15px 15px 23px;
+  padding-left: 23px;
+  padding-bottom: 15px;
   width: 666px;
   height: 49px;
   border-radius: 3px;
   font-size: 16px;
   line-height: 1.5;
+  margin-left: 37px;
+  font-family: HelveticaNeue;
 }
 .alert-1 {
+  margin-top: 45px;
   background-color: #e2eed8;
   color: #4b713d;
+  margin-bottom: 20px;
 }
 .alert-2 {
   background-color: #dcedf6;
     color: #3d708d;
+    margin-bottom: 20px;
 }
 .alert-3 {
   background-color: #fcf7e4;
     color: #876d40;
+    margin-bottom: 20px;
 }
 .alert-4 {
   background-color: #efdfdf;
   color: #9f4f48;
+  margin-bottom: 43px;
 }
 
 .closebtn {

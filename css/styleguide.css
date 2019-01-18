@@ -4,7 +4,7 @@ html{
 .sidenav {
   width: 271px;
   height: 100%;
-  box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: -5px 0 25px 0 ;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -50,8 +50,17 @@ html{
   color: #3f7ccc;
   background-color: #fafafa;
 }
-
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+.container{
+  margin-top: 39px;
+  margin-bottom: 44px;
+  margin-left: 290px;
+  margin-right: 40px;
+  width: 1036px;
+  height: 571px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0;
+  background-color: var(--white);
 }
+
+
 

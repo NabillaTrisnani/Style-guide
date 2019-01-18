@@ -29,7 +29,7 @@ margin: 42px;
 margin: 42px;
 }
 .square--Rectangle-6 {
-  background-color: #dddddd;
+  background-color: #eceeef;
 margin: 42px;
 }
 .square--Rectangle-7 {
@@ -67,4 +67,64 @@ margin: 42px;
 .square--Rectangle-15 {
   background-color: #efdfdf;
 margin: 42px;
+}
+.sidenav {
+  width: 271px;
+  height: 100%;
+  box-shadow: -5px 0 25px 0 ;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding: 6px 6px 6px 32px;
+}
+.sidenav__title{
+  width: 100%;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.36;
+  color: #263238;
+}
+.sidenav__name{
+  width: 100%;
+  height: 19px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.36;
+  color: #9a9a9a;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.sidenav__component{
+  font-size: 24px;
+}
+.sidenav a {
+  
+  text-decoration: none;
+  font-size: 24px;
+  color: #5c5c5c;
+  display: block;
+  font-family: OpenSans;
+   font-weight: 600;
+}
+
+.sidenav a:hover {
+  color: #3f7ccc;
+  background-color: #fafafa;
+}
+.container{
+  margin-top: 39px;
+  margin-bottom: 44px;
+  margin-left: 290px;
+  margin-right: 40px;
+  width: 1036px;
+  height: 571px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0;
+  background-color: var(--white);
 }
