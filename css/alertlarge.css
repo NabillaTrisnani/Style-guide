@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #fafafa;
+}
 .alert{
-  width: 573px;
-  height: 161px;
+  max-width: 573px;
+  width: 100%;
+  max-height: 249px;
+  height: auto;
   border-radius: 4px;
-  font-family: HelveticaNeue;
   margin-bottom: 10px;
   margin-left: 49px;
   padding: 6px 10px 12px 20px;
+  
 }
 .alert--1 {
   margin-top: 28px;
@@ -44,19 +55,14 @@
 strong{
   font-size: 24px;
 }
-html{
-  font-style: OpenSans;
-}
-body{
-  background-color: #fafafa;
-}
+
 .sidenav { 
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 873px;
   box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
-  background-color: var(--white);
+  background-color: #fff;
   height: 100%;
-  box-shadow: -5px 0 25px 0 ;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -65,10 +71,10 @@ body{
   padding-left: 20px;
 }
 .sidenav__title{
-  width: 76px;
+  width: 100%;
   height: 19px;
-  font-family: OpenSans;
-  font-size: 14px;
+   
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -80,10 +86,10 @@ body{
   margin-bottom: 2px;
 }
 .sidenav__name{
-  width: 88px;
+  width: 100%;
   height: 15px;
-  font-family: OpenSans;
-  font-size: 11px;
+   
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -95,9 +101,9 @@ body{
 .sidenav__component{
   width: 86px;
   height: 19px;
-  font-family: OpenSans;
-  font-size: 14px;
-  font-weight: 600;
+   
+  font-size: .875rem;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
@@ -107,11 +113,16 @@ body{
   margin-top: 33px;
   margin-bottom: 26px;
 }
+.sidenav__menu{
+  list-style-type:none;
+  left: 0;
+margin-left: -39px;
+}
 .sidenav a {
   width: 71px;
   height: 18px;
-  font-family: OpenSans;
-  font-size: 13px;
+  text-decoration: none;
+  font-size: .875rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -125,8 +136,8 @@ body{
 .sidenav a:hover {
   width: 33px;
   height: 18px;
-  font-family: OpenSans;
-  font-size: 13px;
+   text-decoration: none; 
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -136,13 +147,16 @@ body{
   color: #3f7ccc;
   background-color: #fafafa;
 }
-.container{
+.box{
   margin-top: 39px;
   margin-bottom: 44px;
   margin-left: 290px;
   margin-right: 40px;
-  width: 1036px;
-  height: 790px;
+  padding: 20px;
+  max-width: 1036px;
+  max-height: 1441px;
+  width: 100%;
+  height: 1441vh;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);

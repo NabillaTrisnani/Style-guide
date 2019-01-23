@@ -1,14 +1,28 @@
-.jumbotron{
-  width: 772px;
-  height: 482px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #fafafa;
+}
+.container__jumbotron{
+  max-width: 772px;
+  width: 100%;
+  max-height: 482px;
+  height:  100%;
   border-radius: 4px;
   margin-left: 68px;
   margin-top: 58px;
+  background-color: silver;
+  padding: 65px 35.5px 87px 34px;
 }
-.jumbotron__title{
-  width: 440px;
-  height: 92px;
-  font-family: HelveticaNeue;
+.container__jumbotron__title{
+  max-width: 67.6vw;
+  max-height: 92px;
+  width: 100%;
+  height: 100%;
   font-size: 79px;
   font-weight: normal;
   font-style: normal;
@@ -19,10 +33,11 @@
   color: #373a3c;
   margin-bottom: 8px;
 }
-.jumbotron__subtitle{
-  width: 702px;
-  height: 55px;
-  font-family: HelveticaNeue;
+.container__jumbotron__subtitle{
+  max-width: 702px;
+  max-height: 55px;
+  width: 100%;
+  height: 100%;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
@@ -33,10 +48,11 @@
   color: #373a3c;
   margin-bottom: 27.5px;
 }
-.jumbotron__body{
-  width: 663px;
-  height: 45px;
-  font-family: HelveticaNeue;
+.container__jumbotron__body{
+  max-width: 663px;
+  max-height: 45px;
+  width: 100%;
+  height: 100%;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -47,22 +63,30 @@
   color: #373a3c;
   margin-top: 27.5px;
 }
-.btn-primary{
+.container__jumbotron__button{
   margin-top: 21px;
-}
-html{
-  font-style: OpenSans;
-}
-body{
-  background-color: #fafafa;
+  max-width: 151px;
+  max-height: 54px;
+  width: 100%;
+  height: 54vh;
+  background-color: #1c7cd5;
+  border: 1px solid #1c7cd5;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
 }
 .sidenav { 
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 873px;
   box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
-  background-color: var(--white);
+  background-color: #fff;
   height: 100%;
-  box-shadow: -5px 0 25px 0 ;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -71,10 +95,10 @@ body{
   padding-left: 20px;
 }
 .sidenav__title{
-  width: 76px;
+  width: 100%;
   height: 19px;
-  font-family: OpenSans;
-  font-size: 14px;
+   
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -86,10 +110,10 @@ body{
   margin-bottom: 2px;
 }
 .sidenav__name{
-  width: 88px;
+  width: 100%;
   height: 15px;
-  font-family: OpenSans;
-  font-size: 11px;
+   
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -101,9 +125,9 @@ body{
 .sidenav__component{
   width: 86px;
   height: 19px;
-  font-family: OpenSans;
-  font-size: 14px;
-  font-weight: 600;
+   
+  font-size: .875rem;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
@@ -113,11 +137,16 @@ body{
   margin-top: 33px;
   margin-bottom: 26px;
 }
+.sidenav__menu{
+  list-style-type:none;
+  left: 0;
+margin-left: -39px;
+}
 .sidenav a {
   width: 71px;
   height: 18px;
-  font-family: OpenSans;
-  font-size: 13px;
+  text-decoration: none;
+  font-size: .875rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -131,8 +160,8 @@ body{
 .sidenav a:hover {
   width: 33px;
   height: 18px;
-  font-family: OpenSans;
-  font-size: 13px;
+   text-decoration: none; 
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -142,15 +171,16 @@ body{
   color: #3f7ccc;
   background-color: #fafafa;
 }
-.container{
-  padding-top: 53px;
-  padding-left: 68px;
+.box{
   margin-top: 39px;
   margin-bottom: 44px;
   margin-left: 290px;
   margin-right: 40px;
-  width: 1036px;
-  height: 790px;
+  padding: 20px;
+  max-width: 1036px;
+  max-height: 790px;
+  width: 100%;
+  height: 100%;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);

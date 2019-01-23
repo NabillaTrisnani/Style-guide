@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html{
   font-family:  OpenSans;
 }
@@ -14,9 +17,8 @@ body{
   width: 250px;
   height: 873px;
   box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
-  background-color: var(--white);
+  background-color: #fff;
   height: 100%;
-  box-shadow: -5px 0 25px 0 ;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -27,7 +29,7 @@ body{
 .sidenav__title{
   width: 76px;
   height: 19px;
-  font-family: OpenSans;
+   
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -42,7 +44,7 @@ body{
 .sidenav__name{
   width: 88px;
   height: 15px;
-  font-family: OpenSans;
+   
   font-size: 11px;
   font-weight: 600;
   font-style: normal;
@@ -55,7 +57,7 @@ body{
 .sidenav__component{
   width: 86px;
   height: 19px;
-  font-family: OpenSans;
+   
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -70,7 +72,7 @@ body{
 .sidenav a {
   width: 71px;
   height: 18px;
-  font-family: OpenSans;
+   
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -85,7 +87,7 @@ body{
 .sidenav a:hover {
   width: 33px;
   height: 18px;
-  font-family: OpenSans;
+   
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
