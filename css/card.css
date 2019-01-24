@@ -1,34 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #fafafa;
 }
 .card{
-  width: 340px;
-  height: auto;
-  background-color: var(--white);
-  margin-left: 68px;
+	word-wrap: break-word;
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	min-width: 0;
+  	word-wrap: break-word;
+  	background-color: #fff;
+  	background-clip: border-box;
+  	border: 1px solid rgba(0,0,0,.125);
+  	border-radius: .25rem;
+  	max-width: 340px;
+  	max-height: 395px;
+  	width: 100%;
+  	height: 395vh;
+  	margin-left: 68px;
+  	margin-bottom: 100px;
 }
 .card--2{
-	margin-left: 440px;
-	margin-top: -384px;
+	margin-left: 497px;
+	margin-top: -495px;
+	max-width: 340px;
+  	max-height: 474px;
+  	width: 100%;
+  	height: 501vh;
+  	border: 1px solid rgba(0,0,0,.125);
+  	border-radius: .25rem;
 }
 .card--3{
-	margin-top: -65px;
+	margin-top: -963px;
+margin-left: 310px;
+	
 }
 .card--4{
-	margin-left: 440px;
+	margin-left: 808px;
 	margin-top: -214px;
+	max-width: 340px;
+  	max-height: 266px;
+  	width: 100%;
+  	height: 266vh;
+  	border: 1px solid rgba(0,0,0,.125);
+  	border-radius: .25rem;
 }
 .card--5{
-	margin-left: 440px;
+	margin-left: 808px;
 	margin-top: 50px;
 	margin-bottom: 95px;
+	max-width: 340px;
+  	max-height: 280px;
+  	width: 100%;
+  	height: 280vh;
+  	border: 1px solid rgba(0,0,0,.125);
+  	border-radius: .25rem;
 }
-.card-img{
-  width: 340px;
-  height: 180px;
-  background-color: #55595c;
+.card--1__img{
+  	max-height: 180px;
+  width: 100%;
+height: 180vh;
+background-color: #55595c;
 }
-.card-title{
+.card--1__title{
   width: 253px;
   height: 29px;
    
@@ -41,20 +80,8 @@
   text-align: left;
   color: #373a3c;
 }
-.card-subtitle{
-  width: 100px;
-  height: 21px;
-   
-  font-size: 17px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.24;
-  letter-spacing: normal;
-  text-align: left;
-  color: #777777;
-}
-.card-text{
+
+.card--1__text{
   width: 298px;
   height: 69px;
    
@@ -67,9 +94,156 @@
   text-align: left;
   color: #373a3c;
 }
+.card--1__btn{
+	background-color: #1c7cd5; 
+  border-radius: 4px;
+  color: white;
+  padding: 11px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-height: 40px;
+  max-width: 140px;
+  height: 40vh;
+  width: 140vw;
+  font-size: 16px;
+}
+.ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+
+.ul .li {
+  border: 1px solid #ddd; /* Add a thin border to each list item */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Add a grey background color */
+  padding: 12px; /* Add some padding */
+}
+.card--2__link + .card--2__link {
+    margin-left: 1.25rem;
+}
+
+.card--2___subtitle{
+  width: 100px;
+  height: 21px;
+   
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+.card--2__img{
+	max-height: 180px;
+  width: 100%;
+height: 180vh;
+background-color: #55595c;
+}
+.card--2__title{
+  width: 253px;
+  height: 29px;
+   
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+
+.card--2__text{
+  width: 298px;
+  height: 69px;
+   
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+
+
+.card--3___subtitle{
+  width: 100px;
+  height: 21px;
+   
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+.card--3__img{
+ max-height: 180px;
+  width: 100%;
+height: 180vh;
+background-color: #55595c;
+}
+.card--3__title{
+  width: 253px;
+  height: 29px;
+   
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+
+.card--3__text{
+  width: 298px;
+  height: 69px;
+   
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+.card--5__btn{
+	background-color: #1c7cd5; 
+  border-radius: 4px;
+  color: white;
+  padding: 11px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-height: 40px;
+  max-width: 140px;
+  height: 40vh;
+  width: 140vw;
+  font-size: 16px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.card--3__link + .card--3__link {
+    margin-left: 1.25rem;
+}
 .card-header{
   background-color: silver;
-   
+  width: 340px;
+  height: 51px;
   font-size: 17px;
   font-weight: normal;
   font-style: normal;
@@ -78,19 +252,27 @@
   letter-spacing: normal;
   text-align: left;
   color: #373a3c;
+  padding: 16px 247px 15px 21px;
 }
 .card-footer{
   background-color: silver;
+  width: 340px;
+  height: 51px;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+  padding: 16px 234px 15px 21px;
 }
 
-html{
-  font-style: OpenSans;
-}
-body{
-  background-color: #fafafa;
-}
+
 .sidenav { 
-  width: 250px;
+  max-width: 250px;
+  width: 100%;
   height: 873px;
   box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
   background-color: #fff;
@@ -103,10 +285,10 @@ body{
   padding-left: 20px;
 }
 .sidenav__title{
-  width: 76px;
+  width: 100%;
   height: 19px;
    
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -118,10 +300,10 @@ body{
   margin-bottom: 2px;
 }
 .sidenav__name{
-  width: 88px;
+  width: 100%;
   height: 15px;
    
-  font-size: 11px;
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -134,8 +316,8 @@ body{
   width: 86px;
   height: 19px;
    
-  font-size: 14px;
-  font-weight: 600;
+  font-size: .875rem;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.36;
@@ -145,11 +327,16 @@ body{
   margin-top: 33px;
   margin-bottom: 26px;
 }
+.sidenav__menu{
+  list-style-type:none;
+  left: 0;
+margin-left: -39px;
+}
 .sidenav a {
   width: 71px;
   height: 18px;
-   
-  font-size: 13px;
+  text-decoration: none;
+  font-size: .875rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -163,8 +350,8 @@ body{
 .sidenav a:hover {
   width: 33px;
   height: 18px;
-   
-  font-size: 13px;
+   text-decoration: none; 
+  font-size: .875rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -174,14 +361,16 @@ body{
   color: #3f7ccc;
   background-color: #fafafa;
 }
-.container{
+.box{
   margin-top: 39px;
   margin-bottom: 44px;
   margin-left: 290px;
   margin-right: 40px;
-  padding-top: 65px;
-  width: 1036px;
-  height: 1362px;
+  padding: 20px;
+  max-width: 956px;
+  max-height:  1362px;
+  width: 100%;
+  height: 1362vh;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
