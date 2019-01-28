@@ -36,12 +36,12 @@ body{
   	border-radius: .25rem;
 }
 .card--3{
-	margin-top: -963px;
-margin-left: 310px;
+	margin-top: 10px;
+
 	
 }
 .card--4{
-	margin-left: 808px;
+	margin-left: 498px;
 	margin-top: -214px;
 	max-width: 340px;
   	max-height: 266px;
@@ -51,7 +51,7 @@ margin-left: 310px;
   	border-radius: .25rem;
 }
 .card--5{
-	margin-left: 808px;
+	margin-left: 498px;;
 	margin-top: 50px;
 	margin-bottom: 95px;
 	max-width: 340px;
@@ -373,9 +373,9 @@ margin-left: -39px;
   margin-right: 40px;
   padding: 20px;
   max-width: 1036px;
-  max-height: 790px;
+  max-height: 1427px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
