@@ -8,17 +8,24 @@ body{
   background-color: #fafafa;
 }
 
-.col-5{
-  width: 50%;
+.col-6{
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  -ms-flex: 0 0 50%;
-flex: 0 0 50%;
-max-width: 50%;
+  -ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;
 }
 .row{
 display: flex;  
 flex-wrap: wrap;
+}
+.h{
+  margin-bottom: .5rem;
+font-family: inherit;
+font-weight: 500;
+line-height: 1.2;
+color: inherit;
 }
 .h-1{
   margin-bottom: 31px;
@@ -104,6 +111,9 @@ flex-wrap: wrap;
   letter-spacing: normal;
   text-align: left;
   color: #373a3c;
+  max-width: 663px;
+
+width: 50%;
 }
 .lead{
   width: 663px;
@@ -116,14 +126,18 @@ flex-wrap: wrap;
   letter-spacing: normal;
   text-align: left;
   color: #373a3c;
+  max-width: 663px;
+
+width: 61%;
 }
 .ul--circle{
-  margin-left: 32px;
+  margin-left: 6px;
   list-style-type: circle;
   color: #373a3c;
 }
 .ul--default{
   color: #373a3c;
+  margin-left: -24px;
 }
 .twitter{
   margin-left: 367px;
@@ -133,7 +147,6 @@ flex-wrap: wrap;
 .twitter__link{
   color: #1c7cd5;
 }
-
 .Display {
   
   font-weight: normal;
@@ -142,6 +155,8 @@ flex-wrap: wrap;
   letter-spacing: normal;
   text-align: left;
   color: #373a3c;
+  margin-left: 591px;
+  margin-top: -998px;
 }
 .Display-1{
   width: 405px;
@@ -175,32 +190,50 @@ flex-wrap: wrap;
    
   border-left: 6px solid silver;
   height: 112px;
+margin-left: 745px;
+  margin-top: 56px;
 }
 .blockquote--quote__left{
-  width: 527px;
+  max-width: 623px;
+  width: 623vw;
   margin-left: 765px;
-
+  margin-top: -84px;
+  margin-right: 154px;
+   
 }
 .blockquote--someone__left{
+  margin-left: 801px;
+  margin-top: 12px;
   
   color: #818a91;
 }
 .blockquote--hr__left{
   border: 1px solid silver;
   width: 23px;
+margin-left: 768px;
+
+margin-top: -9px;
 }
 
 .blockquote--line__right {
   border-left: 6px solid silver;
   height: 112px;
+margin-left: 1261px;
+  margin-top: 56px;
   width: 23px;
 }
 .blockquote--quote__right{
+  margin-left: 719px;
+margin-top: -84px;
+margin-right: 232px;
 width: 527px;
  
 text-align: right;
 }
 .blockquote--someone__right{
+  margin-left: 688px;
+ 
+margin-right: 232px;
 width: 527px;
 
 text-align: right;
@@ -209,6 +242,9 @@ text-align: right;
 .blockquote--hr__right{
   border: 1px solid silver;
 width: 23px;
+margin-left: 1220px;
+margin-top: -10px;
+margin-right: 232px;
 }
 
 
@@ -286,9 +322,13 @@ margin-left: -39px;
   letter-spacing: normal;
   text-align: left;
   color: #5c5c5c;
-  margin-bottom: 22px;
 }
-
+.sidenav__menu-item{
+  margin-bottom: 26px;
+}
+.sidenav__menu-item_color{
+  color: #3f7ccc !important;
+}
 .sidenav a:hover {
   width: 33px;
   height: 18px;
@@ -310,9 +350,9 @@ margin-left: -39px;
   margin-right: 40px;
   padding: 20px;
   max-width: 1036px;
-  max-height: 790px;
+  max-height: 1129px;
   width: 100%;
-  height: 100vh;
+  height: 1129vh;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);

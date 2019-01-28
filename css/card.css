@@ -109,16 +109,16 @@ background-color: #55595c;
   font-size: 16px;
 }
 .ul {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
 }
 
 .ul .li {
-  border: 1px solid #ddd; /* Add a thin border to each list item */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Add a grey background color */
-  padding: 12px; /* Add some padding */
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px; 
 }
 .card--2__link + .card--2__link {
     margin-left: 1.25rem;
@@ -270,10 +270,11 @@ a {
 }
 
 
+
 .sidenav { 
   max-width: 250px;
   width: 100%;
-  height: 873px;
+  height: 100vh;
   box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
   background-color: #fff;
   height: 100%;
@@ -344,9 +345,13 @@ margin-left: -39px;
   letter-spacing: normal;
   text-align: left;
   color: #5c5c5c;
-  margin-bottom: 22px;
 }
-
+.sidenav__menu-item{
+  margin-bottom: 26px;
+}
+.sidenav__menu-item_color{
+  color: #3f7ccc !important;
+}
 .sidenav a:hover {
   width: 33px;
   height: 18px;
@@ -367,10 +372,10 @@ margin-left: -39px;
   margin-left: 290px;
   margin-right: 40px;
   padding: 20px;
-  max-width: 956px;
-  max-height:  1362px;
+  max-width: 1036px;
+  max-height: 790px;
   width: 100%;
-  height: 1362vh;
+  height: 100vh;
   border-radius: 4px;
   background-color: var(--white);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);

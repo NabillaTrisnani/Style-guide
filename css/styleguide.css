@@ -81,9 +81,13 @@ margin-left: -39px;
   letter-spacing: normal;
   text-align: left;
   color: #5c5c5c;
-  margin-bottom: 22px;
 }
-
+.sidenav__menu-item{
+  margin-bottom: 26px;
+}
+.sidenav__menu-item_color{
+  color: #3f7ccc !important;
+}
 .sidenav a:hover {
   width: 33px;
   height: 18px;
