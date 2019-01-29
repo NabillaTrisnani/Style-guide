@@ -7,6 +7,153 @@
 body{
   background-color: #fafafa;
 }
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+small{
+	color: #818a91;
+}
+.form-inline{
+	display: inline-flex;
+	align-items: center;
+padding-left: 0;
+margin-right: .75rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+}
+.form-control-file, .form-control-range {
+    display: block;
+    width: 100%;
+
+}
+.btn-primary{
+  width: 99px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #1c7cd5;
+  background-color: #1c7cd5;
+  color: #fff;
+}
+button, input {
+    overflow: visible;
+
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-check-inline {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: .75rem;
+}
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+        background-size: auto auto;
+    background-size: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.input-group-prepend {
+    margin-right: -1px;
+}
+.input-group-append, .input-group-prepend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.input-group > .input-group-prepend > .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .375rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+}
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-append > .btn, .input-group-lg > .input-group-append > .input-group-text, .input-group-lg > .input-group-prepend > .btn, .input-group-lg > .input-group-prepend > .input-group-text {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin-top: 58px;
+}
+.form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-append > .btn, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-prepend > .input-group-text {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+     margin-top: 9px;
+}
 .sidenav { 
   max-width: 250px;
   width: 100%;

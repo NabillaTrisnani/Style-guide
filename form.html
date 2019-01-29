@@ -4,17 +4,17 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title></title>
 	
-	<link rel="stylesheet" type="text/css" href="css/tables.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
   <div class="sidenav">
   <div class="sidenav__title">Style Guide</div>
   <div class="sidenav__name"> Nabilla Zahra </div>
-  <div class="sidenav__component"> <b>Component</b> </div>
+  <div class="sidenav__component"> Component </div>
   <ul class="sidenav__menu">
   <li class="sidenav__menu-item">
-  <a href="color.html">Color</a>
+  <a href="color.html" class="sidenav__menu-item_color">Color</a>
   </li>
   <li class="sidenav__menu-item">
   <a href="typography.html">Typography</a>
@@ -75,7 +75,7 @@
   
   <div class="form-group">
     <label for="exampleFormControlSelect1">Example select</label>
-   <select class="custom-select" id="inputGroupSelect01">
+   <select class="form-control" id="inputGroupSelect01">
     <option selected>1</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -101,9 +101,9 @@
 
   <form>
   <div class="form-group">
-    <label for="exampleFormControlFile1">Example file input</label>
+    <label for="exampleFormControlFile1">File input</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
-    <small id="emailFile" class="form-text text-muted">This is some placeholder block-level help text for the above input. It’s a bit lighter
+    <small id="emailFile" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter
 and easily wraps to a new line.</small>
   </div>
 </form>
@@ -133,10 +133,11 @@ and easily wraps to a new line.</small>
   </label>
 </div>
 <button type="submit" class="btn btn-primary mb-2">Submit</button>
-
+<br/>
 <form class="form-inline">
 	<div class="form-group">
-		<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Inline Form">
+		
+    <label>Inline Form</label>
   </div>
   <div class="form-group">
    <select class="custom-select" id="inputGroupSelect01">
@@ -148,7 +149,8 @@ and easily wraps to a new line.</small>
   </select>
 </div>
 <div class="form-group">
-  <input type="text" readonly class="form-control-plaintext" id="staticEmail3" value="Must select and option">
+ 
+  <label>Must select and option</label>
   </div>
   <div class="form-group">
   <input type="text" readonly class="form-control-plaintext" id="staticEmail4" value="Chose file">
@@ -159,9 +161,7 @@ and easily wraps to a new line.</small>
 	<div class="input-group mb-3 col-2">
   <div class="input-group-prepend">
     <span class="input-group-text">$</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-  <div class="input-group-append">
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
     <span class="input-group-text">.00</span>
   </div>
 </div>
@@ -169,8 +169,9 @@ and easily wraps to a new line.</small>
 <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
   </div>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  
 </div>
 </form>
 
