@@ -6,6 +6,8 @@
 
 body{
   background-color: #fafafa;
+  margin: 0;
+  padding: 0;
 }
 .sidenav { 
   max-width: 250px;
@@ -19,7 +21,6 @@ body{
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-left: 20px;
 }
 .sidenav__title{
   width: 100%;
@@ -66,10 +67,10 @@ body{
 }
 .sidenav__menu{
   list-style-type:none;
-  left: 0;
-margin-left: -39px;
+margin: 0;
+padding: 0;
 }
-.sidenav a {
+a {
   width: 71px;
   height: 18px;
   text-decoration: none;
@@ -81,26 +82,17 @@ margin-left: -39px;
   letter-spacing: normal;
   text-align: left;
   color: #5c5c5c;
+  padding: 11px 20px;
+}
+.sidenav__menu-item:hover {
+    margin-bottom: 26px;
+    background-color: green;
 }
 .sidenav__menu-item{
   margin-bottom: 26px;
 }
 .sidenav__menu-item_color{
-  color: #3f7ccc !important;
-}
-.sidenav a:hover {
-  width: 33px;
-  height: 18px;
-   text-decoration: none; 
-  font-size: .875rem;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3f7ccc;
-  background-color: #fafafa;
+  color: #3f7ccc ;
 }
 .box{
   margin-top: 39px;
