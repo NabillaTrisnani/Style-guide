@@ -6,22 +6,25 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="sidenav">
-  <div class="sidenav__title">Style Guide</div>
-  <div class="sidenav__name"> Nabilla Zahra </div>
+  <div class="sidenav__header">
+    <div class="sidenav__title">Style Guide</div>
+    <div class="sidenav__name"> Nabilla Zahra </div>
+  </div>
   <div class="sidenav__component"> Component </div>
-  <ul class="sidenav__menu">
-  <li class="sidenav__menu-item">
-  <a href="color.html" class="sidenav__menu-item_color">Color</a>
-  </li>
-  <li class="sidenav__menu-item">
-  <a href="typography.html">Typography</a>
-</li>
-  <li class="sidenav__menu-item">
-  <a href="grid.html"> Grid Layout</a>
-</li>
+    <ul class="sidenav__menu">
+      <li class="sidenav__menu-item">
+        <a href="color.html">Color</a>
+      </li>
+      <li class="sidenav__menu-item">
+        <a href="typography.html">Typography</a>
+      </li>
+      <li class="sidenav__menu-item">
+        <a href="grid.html"> Grid Layout</a>
+      </li>
 <li class="sidenav__menu-item">
   <a href="breadcrumb.html">Breadcrumb</a>
 </li>
@@ -31,8 +34,6 @@
 <li class="sidenav__menu-item">
   <a href="alertlarge.html">Alert Large</a>
 </li>
-<li class="sidenav__menu-item">
-  </li>
   <li class="sidenav__menu-item">
   <a href="jumbotron.html">Jumbotron</a>
 </li>
@@ -45,7 +46,7 @@
 <li class="sidenav__menu-item">
   <a href="tables.html">Tables</a>
 </li>
-<li class="sidenav__menu-item">
+<li class="sidenav__menu-item active">
   <a href="form.html">Forms</a>
 </li>
 <li class="sidenav__menu-item">
@@ -59,7 +60,7 @@
 </li>
 </ul>
 </div>
-<div class="box">
+<div class="card">
 
 <form>
   <div class="form-group">
@@ -180,13 +181,61 @@ and easily wraps to a new line.</small>
      Disabled and read only
   </label>	
 <input class="form-control" type="text" placeholder="Email address" readonly>
-
+</form>
 <form class="form-group">
 	<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
 	<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
 </form>
 
+<form>
+<div class="form-group">
+    <label for="exampleInputEmail1" class="success">Email address</label>
+    <input type="email" class="form-control border--success" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <label for="exampleInputEmail1" class="success">Success! You've done it.</label><br/>
+    <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="warning">Email address</label>
+    <input type="email" class="form-control border--warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <label for="exampleInputEmail1" class="warning">Shucks, check the formatting of that and try again.</label><br/>
+    <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="danger">Email address</label>
+    <input type="email" class="form-control border--danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <label for="exampleInputEmail1" class="danger">Sorry, that username's taken. Try another?</label><br/>
+    <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
+  </div>
 </form>
+<div class="form-group">
+  <div class="row">
+    <div class="col-4">
+ <label class="container">One
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+</div>
+<div class="col-4">
+  <label class="container">One
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">One
+  <input type="radio">
+  <span class="checkmark"></span>
+</label>
+</div>
+</div>
+</div>
+
 </form>
 </div>
 </body>

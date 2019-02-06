@@ -6,6 +6,109 @@
 
 body{
   background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+.active{
+  width: 100%;
+    background-color: #eceeef;
+}
+.active a{
+  
+  color: #3f7ccc ;
+}
+.sidenav { 
+  width: 250px;
+  height: 100vh;
+  box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+.sidenav__header{
+  padding: 19px 20px 33px 20px;
+}
+.sidenav__title{
+  font-size: .875rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+}
+.sidenav__name{
+  font-size: .875rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9a9a9a;
+}
+.sidenav__component{
+  font-size: .875rem;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #263238;
+  padding: 33px 20px 15px 20px;
+}
+.sidenav__menu{
+  list-style-type:none;
+margin: 0;
+padding: 0;
+}
+.sidenav__menu-item:hover {
+    width: 100%;
+    background-color: #eceeef;
+     cursor: pointer;
+  color: #3f7ccc ;
+}
+.sidenav__menu-item {
+    width: 248.7px;
+     padding: 11px 20px;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+}
+a:hover{
+
+  color: #3f7ccc ;
+}
+a {
+  text-decoration: none;
+  font-size: .875rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5c5c5c;
+}
+.sidenav__menu-item_color{
+  color: #3f7ccc ;
+}
+.card{
+  margin: 40px 40px 40px calc(250px + 40px);
+  padding: 20px;
+  max-width: 1036px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
 }
 label {
     display: inline-block;
@@ -154,112 +257,92 @@ button, input, optgroup, select, textarea {
     border-radius: .2rem;
      margin-top: 9px;
 }
-.sidenav { 
-  max-width: 250px;
-  width: 100%;
-  height: 100vh;
-  box-shadow: -5px 0 25px 0 rgba(0, 0, 0, 0.04);
-  background-color: #fff;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
+.border--success{
+	border: 1px solid #449d44 !important;
+}
+.border--warning{
+	border: 1px solid #ee9800 !important;
+}
+.border--danger{
+	border: 1px solid #cb2e25 !important;
+}
+.success{
+	color: #449d44;
+}
+.warning{
+	color: #ee9800;
+}
+.danger{
+	color: #cb2e25;
+}
+.row{
+display: flex;	
+flex-wrap: wrap;
+}
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  padding-left: 20px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
 }
-.sidenav__title{
-  width: 100%;
-  height: 19px;
-   
-  font-size: .875rem;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: left;
-  color: #263238;
-  margin-top: 19px;
-  margin-bottom: 2px;
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
 }
-.sidenav__name{
-  width: 100%;
-  height: 15px;
-   
-  font-size: .875rem;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: left;
-  color: #9a9a9a;
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
 }
-.sidenav__component{
-  width: 86px;
-  height: 19px;
-   
-  font-size: .875rem;
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.36;
-  letter-spacing: normal;
-  text-align: left;
-  color: #263238;
-  margin-top: 33px;
-  margin-bottom: 26px;
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
-.sidenav__menu{
-  list-style-type:none;
-  left: 0;
-margin-left: -39px;
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
-.sidenav a {
-  width: 71px;
-  height: 18px;
-  text-decoration: none;
-  font-size: .875rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-  color: #5c5c5c;
-}
-.sidenav__menu-item{
-  margin-bottom: 26px;
-}
-.sidenav__menu-item_color{
-  color: #3f7ccc !important;
-}
-.sidenav a:hover {
-  width: 33px;
-  height: 18px;
-   text-decoration: none; 
-  font-size: .875rem;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3f7ccc;
-  background-color: #fafafa;
-}
-.box{
-  margin-top: 39px;
-  margin-bottom: 44px;
-  margin-left: 290px;
-  margin-right: 40px;
-  padding: 20px;
-  max-width: 1036px;
-  max-height: 790px;
-  width: 100%;
-  height: 100vh;
-  border-radius: 4px;
-  background-color: var(--white);
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
-}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 

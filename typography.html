@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/typography.css">
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
-</head>
 <body>
-<div class="sidenav">
-  <div class="sidenav__title">Style Guide</div>
-  <div class="sidenav__name"> Nabilla Zahra </div>
-  <div class="sidenav__component"> <b>Component</b> </div>
-  <ul class="sidenav__menu">
-  <li class="sidenav__menu-item">
-  <a href="color.html">Color</a>
-  </li>
-  <li class="sidenav__menu-item">
-  <a href="typography.html">Typography</a>
-</li>
-  <li class="sidenav__menu-item">
-  <a href="grid.html"> Grid Layout</a>
-</li>
+	<div class="sidenav">
+  <div class="sidenav__header">
+    <div class="sidenav__title">Style Guide</div>
+    <div class="sidenav__name"> Nabilla Zahra </div>
+  </div>
+  <div class="sidenav__component"> Component </div>
+    <ul class="sidenav__menu">
+      <li class="sidenav__menu-item">
+        <a href="color.html">Color</a>
+      </li>
+      <li class="sidenav__menu-item active">
+        <a href="typography.html">Typography</a>
+      </li>
+      <li class="sidenav__menu-item">
+        <a href="grid.html"> Grid Layout</a>
+      </li>
 <li class="sidenav__menu-item">
   <a href="breadcrumb.html">Breadcrumb</a>
 </li>
@@ -33,8 +34,6 @@
 <li class="sidenav__menu-item">
   <a href="alertlarge.html">Alert Large</a>
 </li>
-<li class="sidenav__menu-item">
-  </li>
   <li class="sidenav__menu-item">
   <a href="jumbotron.html">Jumbotron</a>
 </li>
@@ -61,19 +60,18 @@
 </li>
 </ul>
 </div>
-<div class="box">
-<div class="row"> 
-<div class="col-6">
-<div class="h">
-<h1 class="h-1">h1. Bootstrap heading</h1>
-<h2 class="h-2">h2. Bootstrap heading</h2>
-<h3 class="h-3">h3. Bootstrap heading</h3>
-<h4 class="h-4">h4. Bootstrap heading</h4>
-<h5 class="h-5">h5. Bootstrap heading</h5>
-<h6 class="h-6">h6. Bootstrap heading</h6>
-</div>
-
-<div class="fancydisplay"><h3> Fancy display heading <small class="fancydisplay--h4"> With faded secondary text </small> </h3>
+<div class="card">
+	<div class="row">
+		<div class="col-5">
+			<div class="h">
+				<h1 class="h-1">h1. Bootstrap heading</h1>
+				<h2 class="h-2">h2. Bootstrap heading</h2>
+				<h3 class="h-3">h3. Bootstrap heading</h3>
+				<h4 class="h-4">h4. Bootstrap heading</h4>
+				<h5 class="h-5">h5. Bootstrap heading</h5>
+				<h6 class="h-6">h6. Bootstrap heading</h6>
+			</div>
+			<div class="fancydisplay"><h3> Fancy display heading <small class="fancydisplay--h4"> With faded secondary text </small> </h3>
 </div>
 
 <div class="normal">
@@ -111,29 +109,29 @@ P: (123) 456-7890<br/>
 <b>xd freebies</b><br/>
 <div class="twitter__link">xdfreebies@gmail.com<br/></div>
 </div>
+		</div>
+
+		<div class="col-5">
+			<div class="Display">
+			<div class="Display-1">Display 1</div>
+			<div class="Display-2">Display 2</div>
+			<div class="Display-3">Display 3</div>
+			<div class="Display-4">Display 4</div>
+			</div>
 
 
-<div class="Display">
-<div class="Display-1">Display 1</div>
-<div class="Display-2">Display 2</div>
-<div class="Display-3">Display 3</div>
-<div class="Display-4">Display 4</div>
-</div>
-
-<blockquote class="blockquote">
-<div class="blockquote--line__left"></div>
+	<blockquote class="blockquote__left">
 <div class="blockquote--quote__left">Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
-<div class="blockquote--someone__left">Someone famous in <i>Source Title</i><hr class="blockquote--hr__left"></div>
+<div class="blockquote--someone__left">Someone famous in <i>Source Title</i></div><hr class="blockquote--hr__left">
 </blockquote> 
-
-<blockquote class="blockquote">
-<div class="blockquote--line__right"></div>
+<br/>
+<blockquote class="blockquote__right">
 <div class="blockquote--quote__right">Blockquote. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
 <div class="blockquote--someone__right">Someone famous in <i>Source Title</i><hr class="blockquote--hr__right"></div>
 </blockquote>
-</div>
-</div>
-</div>
+		</div>
+	</div>
 
+</div>
 </body>
 </html>
