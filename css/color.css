@@ -124,7 +124,6 @@ margin-bottom: 29vh;
   max-height: 136px;
    width: 100% !important;
     height: 100% !important;
-    margin-bottom: .5rem !important;
   }
 .col-2{
   width: 16.666667%;
@@ -140,113 +139,83 @@ flex-wrap: wrap;
 }
 
 .square--color-1 {
-  width: 200vw;
-  height: 200vh;
   background-color: #373a3c;
   
   margin-bottom: 70px;
 }
 .square--color-2 {
-  width: 200vw;
-  height: 200vh;
   background-color: #55595c;
   
   margin-bottom: 70px;
 }
 .square--color-3 {
-  width: 200vw;
-  height: 200vh;
   background-color: #777777;
   
   margin-bottom: 70px;
 }
 .square--color-4 {
-  width: 200vw;
-  height: 200vh;
   background-color: #818a91;
 
   margin-bottom: 70px;
 }
 .square--color-5 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #dddddd;
 
   margin-bottom: 70px;
 }
 .square--color-6 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #eceeef;
   margin-bottom: 70px;
 }
 .square--color-7 {
-  width: 200vw;
-  height: 200vh;
   background-color: #1c7cd5;
 
   margin-bottom: 70px;
 }
 .square--color-8 {
-  width: 200vw;
-  height: 200vh;
   background-color: #5cb85c;
 
   margin-bottom: 70px;
 }
 .square--color-9 {
-  width: 200vw;
-  height: 200vh;
   background-color: #56c0e0;
 
   margin-bottom: 70px;
 }
 .square--color-10 {
-  width: 200vw;
-  height: 200vh;
   background-color: #f0ad4e;
 
   margin-bottom: 70px;
 }
 .square--color-11 {
-  width: 200vw;
-  height: 200vh;
   background-color: #d9534f;
   margin-bottom: 70px;
 }
 .square--color-12 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #dcedf6;
 
   margin-bottom: 70px;
 }
 .square--color-13 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #e2eed8;
   margin-bottom: 70px;
 }
 .square--color-14 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #fcf7e4;
   margin-bottom: 70px;
 }
 .square--color-15 {
-  width: 200vw;
-  height: 200vh;
   border: 1px solid #373a3c;
   background-color: #efdfdf;
   margin-bottom: 70px;
 }
 .square--color-16 {
-  background-color: #fff;
+  background-color: transparent;
   margin-bottom: 70px;
 }
 
