@@ -112,7 +112,12 @@ a {
 }
 label {
     display: inline-block;
-    margin-bottom: .5rem;
+}
+.inlineform{
+	padding: 10px 11px 10px 0;
+}
+.selectgroup{
+	padding: 11px 66px 11px 20px;
 }
 small{
 	color: #818a91;
@@ -122,6 +127,45 @@ small{
 	align-items: center;
 padding-left: 0;
 margin-right: .75rem;
+}
+.form-group--1{
+	padding: 14px 0px;
+}
+.form-group--2{
+	padding: 14px 0px 8px 0px;
+}
+.form-group--3{
+	padding: 8px 0px;
+}
+.form-group--4{
+	padding: calc(13px - 8px) 0px 11px 0px;
+}
+.form-group--4{
+	padding: calc(13px - 8px) 0px 11px 0px;
+}
+.form-group--5{
+	padding: 11px 0px 15px 0px;
+}
+.form-group--6{
+	padding: 10px 0px 36px 0px;
+}
+.form-group--7{
+	padding: 0 0px 38px 0px;
+}
+.form-inline--1{
+	padding-bottom: 37px;
+}
+.form-group--8{
+	padding-top: 38px;
+}
+.form-group--9{
+	padding: 58px 0 40px 0;
+}
+.form-group--10{
+	padding-bottom: 32px;
+}
+.form-group--11{
+	padding: calc(46px - 32px) 0 39px 0 ;
 }
 .form-control {
     display: block;
@@ -135,6 +179,68 @@ margin-right: .75rem;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.file-input{
+  padding-left: 16px;
+    font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #55595c;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.form-check-label--1{
+	padding: 0 0 11px 0;
+}
+.form-check-label--2{
+	padding: 0 0 9px 0;
+}
+.form-check-label--3{
+	padding: 0 0 13px 0;
+}
+.form-check-label--4{
+	padding: 0 0 16px 0;
+}
+.btn {
+  border: 1px solid #95989a;
+  color: gray;
+  background-color: white;
+  padding: 8px 16px 8px 17px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #373a3c;
+}
+.btn--2 {
+  border: #fff;
+  color: gray;
+  background-color: white;
+    font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #777777;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 select.form-control:not([size]):not([multiple]) {
     height: calc(2.25rem + 2px);
@@ -176,7 +282,7 @@ button, input, optgroup, select, textarea {
     display: inline-block;
     width: 100%;
     height: calc(2.25rem + 2px);
-    padding: .375rem 1.75rem .375rem .75rem;
+    padding: 0 73px 0 16px;
     line-height: 1.5;
     color: #495057;
     vertical-align: middle;
@@ -246,7 +352,6 @@ button, input, optgroup, select, textarea {
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: .3rem;
-    margin-top: 58px;
 }
 .form-control-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-append > .btn, .input-group-sm > .input-group-append > .input-group-text, .input-group-sm > .input-group-prepend > .btn, .input-group-sm > .input-group-prepend > .input-group-text {
     padding: .25rem .5rem;
@@ -283,6 +388,15 @@ button, input, optgroup, select, textarea {
 .danger{
 	color: #cb2e25;
 }
+.fa-exclamation-triangle{
+	color: #ee9800;
+}
+.fa-check{
+	color: #449d44;
+}
+.fa-times{
+  color: #cb2e25;
+}
 .row{
 display: flex;	
 flex-wrap: wrap;
@@ -310,21 +424,42 @@ max-width: 33.333333%;
 flex: 0 0 50%;
 max-width: 50%;
 }
-/* The container */
+
+.checkmark--3::before {
+  content: "";
+  position: absolute;
+  display: none;
+  display: block;
+}
+
+
+.container .checkmark--3::before {
+ left: 4px;
+top: 1px;
+width: 7px;
+height: 5px;
+border: solid white;
+border-width: 0 0 3px 0;
+}
+.container .checkmark--3 {
+  background-color: #2196F3;
+}
+.container input:checked ~ .checkmark--3::before {
+  display: none;
+}
 .container {
   display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
@@ -338,9 +473,10 @@ max-width: 50%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   background-color: #eee;
+  margin-top: 3px;
 }
 
 
@@ -367,15 +503,15 @@ max-width: 50%;
 
 
 .container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+ left: 4px;
+top: 3px;
+width: 3px;
+height: 5px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 
@@ -407,10 +543,11 @@ max-width: 50%;
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   background-color: #eee;
   border-radius: 50%;
+  margin-top: 3px;
 }
 
 
@@ -437,10 +574,10 @@ max-width: 50%;
 
 
 .container .checkmark--2:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
+ 	top: 5px;
+left: 5px;
+width: 5px;
+height: 5px;
 	border-radius: 50%;
 	background: white;
 }
@@ -495,7 +632,52 @@ max-width: 50%;
     border: 1px solid #ced4da;
     border-radius: .25rem;
 }
-label {
-    display: inline-block;
-    margin-bottom: .5rem;
+.input-icon-wrap {
+  display: flex;
+  flex-direction: row;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.input-icon {
+  background: #fff;
+}
+
+.input-with-icon {
+  border: none;
+  flex: 1;
+}
+.row{
+display: flex;	
+flex-wrap: wrap;
+}
+.input-icon-wrap--1 {
+  border: 1px solid #ddd;    
+  display: flex;
+  flex-direction: row;
+  border-radius: 4px;
+  margin-right: 28px;
+
+}
+
+.input-icon--1 {
+  background: #eceeef;
+  padding: 18px 15px;
+}
+
+.input-with-icon--1 {
+  border: none;
+  flex: 1;
+}
+
+.input-icon--1, .input-with-icon--1 {
+  padding: 10px 15px;
+}
+

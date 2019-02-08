@@ -63,18 +63,18 @@
 <div class="card">
 
 <form>
-  <div class="form-group">
+  <div class="form-group--1">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
 
-<div class="form-group">
+<div class="form-group--2">
     <label for="exampleFormControlInput1">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
   </div>
   
-  <div class="form-group">
+  <div class="form-group--3">
     <label for="exampleFormControlSelect1">Example select</label>
    <select class="form-control" id="inputGroupSelect01">
     <option selected>1</option>
@@ -85,7 +85,7 @@
   </select>
   </div>
   
-  <div class="form-group">
+  <div class="form-group--4">
     <label for="exampleFormControlSelect2">Example multiple select</label>
     <select multiple class="form-control" id="exampleFormControlSelect2">
       <option>1</option>
@@ -95,50 +95,55 @@
     </select>
   </div>
   
-  <div class="form-group">
+  <div class="form-group--5">
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 
   <form>
-  <div class="form-group">
-    <label for="exampleFormControlFile1">File input</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  <div class="form-group--6">
+    <label for="exampleFormControlFile1">File input</label><br/>
+    <div class="upload-btn-wrapper">
+  <button class="btn">Chose File</button>
+  <input type="file" name="myfile" />
+  <label class="file-input"> No File Chosen </label>
+</div><br/>
     <small id="emailFile" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter
 and easily wraps to a new line.</small>
   </div>
 </form>
 
+<div class="form-group--7">
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
+  <label class="form-check-label--1" for="exampleRadios1">
    Option one is this and that-be sure to include why it's great
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-  <label class="form-check-label" for="exampleRadios2">
+  <label class="form-check-label--2" for="exampleRadios2">
     Option two can be something else and selecting it will deselect option one
   </label>
 </div>
 <div class="form-check disabled">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-  <label class="form-check-label" for="exampleRadios3">
+  <label class="form-check-label--3" for="exampleRadios3">
     Option three is disabled
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">
+  <label class="form-check-label--4" for="defaultCheck1">
     Check me out
   </label>
 </div>
 <button type="submit" class="btn btn-primary mb-2">Submit</button>
-<br/>
-<form class="form-inline">
+</div>
+<form class="form-inline form-inline--1">
 	<div class="form-group">
 		
-    <label>Inline Form</label>
+    <label class="inlineform">Inline Form</label>
   </div>
   <div class="form-group">
    <select class="custom-select" id="inputGroupSelect01">
@@ -151,65 +156,75 @@ and easily wraps to a new line.</small>
 </div>
 <div class="form-group">
  
-  <label>Must select and option</label>
+  <label class="selectgroup"><small>Must select and option</small></label>
   </div>
   <div class="form-group">
-  <input type="text" readonly class="form-control-plaintext" id="staticEmail4" value="Chose file">
+  <div class="upload-btn-wrapper">
+  <button class="btn--2">Chose file</button>
+  <input type="file" name="myfile" />
+</div>
   </div>
 </form>
 
-<form class="form-inline">
-	<div class="input-group mb-3 col-2">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-    <span class="input-group-text">.00</span>
-  </div>
+<div class="row">
+<div class="input-icon-wrap--1">
+  <span class="input-icon--1"><span class="">$</span></span>
+  <input type="text" class="input-with-icon--1" id="form-name" placeholder="Amount"><span class="input-icon--1"><span class="">.00</span></span>
+</div>  
+
+
+<div class="input-icon-wrap--1">
+  <span class="input-icon--1"><span class="">@</span></span>
+  <input type="text" class="input-with-icon--1" id="form-name" placeholder="Username">
+</div>  
 </div>
 
-<div class="input-group mb-3 col-2">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
-  
-</div>
-</form>
-
-<form class="form-group">
+<form class="form-group--8">
 <label class="form-readonly" for="readonly">
      Disabled and read only
   </label>	
 <input class="form-control" type="text" placeholder="Email address" readonly>
 </form>
-<form class="form-group col-8">
+<form class="form-group--9 col-8">
 	<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
 	<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
 </form>
 
 <form>
-<div class="form-group">
+<div class="form-group--10">
     <label for="exampleInputEmail1" class="success">Email address</label>
-    <input type="email" class="form-control border--success" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <div class="input-icon-wrap border--success">
+  
+  <input type="text" class="input-with-icon" id="form-name" placeholder="Email address">
+  <span class="input-icon"><span class="fa fa-check"></span></span>
+</div>  
     <label for="exampleInputEmail1" class="success">Success! You've done it.</label><br/>
     <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
 
-  <div class="form-group">
+  <div class="form-group--10">
     <label for="exampleInputEmail1" class="warning">Email address</label>
-    <input type="email" class="form-control border--warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <div class="input-icon-wrap border--warning">
+  
+  <input type="text" class="input-with-icon" id="form-name" placeholder="Email address">
+  <span class="input-icon"><span class="fa fa-exclamation-triangle"></span></span>
+</div>  
     <label for="exampleInputEmail1" class="warning">Shucks, check the formatting of that and try again.</label><br/>
     <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
 
-  <div class="form-group">
+  <div class="form-group--10">
     <label for="exampleInputEmail1" class="danger">Email address</label>
-    <input type="email" class="form-control border--danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+    <div class="input-icon-wrap border--danger">
+  
+  <input type="text" class="input-with-icon" id="form-name" placeholder="Email address">
+  <span class="input-icon"><span class="fa fa-times"></span></span>
+</div>  
     <label for="exampleInputEmail1" class="danger">Sorry, that username's taken. Try another?</label><br/>
     <small id="emailHelp" class="form-text text-muted">Example help text that remains unchanged.</small>
   </div>
 </form>
-<div class="form-group">
+<div class="form-group--11">
   <div class="row">
     <div class="col-4">
  <label class="container">Custom Checkbox
@@ -236,11 +251,13 @@ and easily wraps to a new line.</small>
 </div>
 <div class="col-4">
 <label class="container">Custom Checkbox
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
+  <input type="checkbox">
+  <span class="checkmark checkmark--3"></span>
 </label>
 </div>
 </div>
+</div>
+<div class="form-group">
 <div class="custom-file">
   <input type="file" class="custom-file-input" id="customFile">
   <label class="custom-file-label" for="customFile"></label>
